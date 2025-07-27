@@ -54,9 +54,9 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				telecom: {
-					blue: 'hsl(var(--telecom-blue))',
-					'blue-light': 'hsl(var(--telecom-blue-light))',
-					'blue-dark': 'hsl(var(--telecom-blue-dark))',
+					green: 'hsl(var(--telecom-green))',
+					'green-light': 'hsl(var(--telecom-green-light))',
+					'green-dark': 'hsl(var(--telecom-green-dark))',
 					gray: 'hsl(var(--telecom-gray))',
 					'gray-light': 'hsl(var(--telecom-gray-light))'
 				},

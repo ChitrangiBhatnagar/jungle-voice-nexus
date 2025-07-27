@@ -81,23 +81,29 @@ const Homepage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-telecom-blue via-telecom-blue-dark to-telecom-gray text-white py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <section className="relative bg-gradient-to-br from-telecom-green via-telecom-green-dark to-telecom-gray text-white py-24 lg:py-40 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/30"></div>
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-telecom-green/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-telecom-green-light/10 rounded-full blur-3xl"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6 bg-white/20 text-white border-white/30">
+          <div className="max-w-5xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-8 bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300">
               ✨ Trusted by 1000+ companies worldwide
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Global Cloud Telephony
-              <span className="block text-telecom-blue-light">Built to Scale Your Outreach</span>
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+              Transform Your Business
+              <span className="block bg-gradient-to-r from-white to-telecom-green-light bg-clip-text text-transparent">
+                with Global Cloud Telephony
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Reliable, secure, and scalable voice infrastructure — powered by iGCT.
-              Connect with customers worldwide through our enterprise-grade telephony platform.
+            <p className="text-xl md:text-2xl mb-12 text-white/95 max-w-4xl mx-auto leading-relaxed">
+              Revolutionary voice infrastructure powered by iGCT. Connect with customers across 180+ countries 
+              with crystal-clear quality, enterprise security, and intelligent automation that scales with your growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+              <Button variant="hero" size="lg" className="text-lg px-10 py-5 shadow-2xl" asChild>
                 <a
                   href="https://salescentri.com/get-started/free-trial"
                   target="_blank"
@@ -108,9 +114,9 @@ const Homepage = () => {
                 </a>
               </Button>
               <Button
-                variant="outline"
+                variant="demo"
                 size="lg"
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-telecom-blue"
+                className="text-lg px-10 py-5 shadow-xl"
                 asChild
               >
                 <a
@@ -123,9 +129,19 @@ const Homepage = () => {
                 </a>
               </Button>
             </div>
-            <div className="text-white/80">
-              <p className="mb-2">🚀 Get started in under 5 minutes</p>
-              <p>No credit card required • 14-day free trial</p>
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white/90 text-lg">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-telecom-green-light" />
+                <span>Setup in 5 minutes</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-telecom-green-light" />
+                <span>No credit card required</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-telecom-green-light" />
+                <span>14-day free trial</span>
+              </div>
             </div>
           </div>
         </div>
@@ -148,8 +164,8 @@ const Homepage = () => {
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-6">
-                    <div className="bg-telecom-blue/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="h-6 w-6 text-telecom-blue" />
+                     <div className="bg-telecom-green/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                       <Icon className="h-6 w-6 text-telecom-green" />
                     </div>
                     <h3 className="text-xl font-semibold text-telecom-gray mb-2">
                       {feature.title}
@@ -203,13 +219,13 @@ const Homepage = () => {
                 </Button>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-telecom-blue/5 to-telecom-blue-dark/5 p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-telecom-green/5 to-telecom-green-dark/5 p-8 rounded-2xl">
               <div className="text-center space-y-6">
-                <div className="text-4xl font-bold text-telecom-blue">99.9%</div>
+                <div className="text-4xl font-bold text-telecom-green">99.9%</div>
                 <div className="text-telecom-gray">Uptime Guarantee</div>
-                <div className="text-4xl font-bold text-telecom-blue">180+</div>
+                <div className="text-4xl font-bold text-telecom-green">180+</div>
                 <div className="text-telecom-gray">Countries Supported</div>
-                <div className="text-4xl font-bold text-telecom-blue">50%</div>
+                <div className="text-4xl font-bold text-telecom-green">50%</div>
                 <div className="text-telecom-gray">Cost Reduction</div>
               </div>
             </div>
@@ -256,7 +272,7 @@ const Homepage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-telecom-blue to-telecom-blue-dark text-white">
+      <section className="py-20 bg-gradient-to-r from-telecom-green to-telecom-green-dark text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Transform Your Communications?
@@ -266,9 +282,8 @@ const Homepage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              variant="outline"
+              variant="demo"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-telecom-blue"
               asChild
             >
               <a
@@ -282,7 +297,7 @@ const Homepage = () => {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white text-telecom-blue hover:bg-gray-100"
+              className="bg-white text-telecom-green hover:bg-gray-100"
               asChild
             >
               <a

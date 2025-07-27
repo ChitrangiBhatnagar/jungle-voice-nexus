@@ -37,16 +37,16 @@ All colors MUST be HSL.
     --input: 220 13% 91%;
     --ring: 200 98% 46%;
 
-    /* Custom telecom theme colors */
-    --telecom-blue: 200 98% 46%;
-    --telecom-blue-light: 200 98% 60%;
-    --telecom-blue-dark: 200 98% 35%;
+    /* Custom green theme colors */
+    --telecom-green: 142 71% 45%;
+    --telecom-green-light: 142 71% 60%;
+    --telecom-green-dark: 142 71% 35%;
     --telecom-gray: 220 9% 20%;
     --telecom-gray-light: 220 9% 46%;
-    --telecom-gradient: linear-gradient(135deg, hsl(var(--telecom-blue)), hsl(var(--telecom-blue-dark)));
-    --telecom-gradient-hero: linear-gradient(135deg, hsl(var(--telecom-blue)) 0%, hsl(var(--telecom-blue-dark)) 100%);
-    --telecom-shadow: 0 10px 40px -15px hsl(var(--telecom-blue) / 0.3);
-    --telecom-shadow-lg: 0 25px 50px -12px hsl(var(--telecom-blue) / 0.25);
+    --telecom-gradient: linear-gradient(135deg, hsl(var(--telecom-green)), hsl(var(--telecom-green-dark)));
+    --telecom-gradient-hero: linear-gradient(135deg, hsl(var(--telecom-green)) 0%, hsl(var(--telecom-green-dark)) 100%);
+    --telecom-shadow: 0 10px 40px -15px hsl(var(--telecom-green) / 0.3);
+    --telecom-shadow-lg: 0 25px 50px -12px hsl(var(--telecom-green) / 0.25);
 
     --radius: 0.5rem;
 

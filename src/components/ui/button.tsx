@@ -18,9 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-telecom-blue to-telecom-blue-dark text-white hover:shadow-lg hover:scale-105 transition-all duration-300",
-        cta: "bg-telecom-blue text-white hover:bg-telecom-blue-dark hover:shadow-lg transition-all duration-300",
-        "outline-cta": "border-2 border-telecom-blue text-telecom-blue bg-transparent hover:bg-telecom-blue hover:text-white transition-all duration-300",
+        hero: "bg-gradient-to-r from-telecom-green to-telecom-green-dark text-white hover:shadow-lg hover:scale-105 transition-all duration-300",
+        cta: "bg-telecom-green text-white hover:bg-telecom-green-dark hover:shadow-lg transition-all duration-300",
+        "outline-cta": "border-2 border-telecom-green text-telecom-green bg-transparent hover:bg-telecom-green hover:text-white transition-all duration-300",
+        "demo": "bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-telecom-green-dark transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
