@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CalendarDays, Clock, ArrowRight, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Blog = () => {
   const featuredPost = {
@@ -140,9 +139,13 @@ const Blog = () => {
                     {featuredPost.category}
                   </Badge>
                   <h3 className="text-2xl md:text-3xl font-bold text-telecom-gray mb-4 hover:text-telecom-blue transition-colors">
-                    <Link to={`/blog/${featuredPost.slug}`}>
+                    <a
+                      href="https://salescentri.com/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {featuredPost.title}
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-telecom-gray-light mb-6 text-lg">
                     {featuredPost.excerpt}
@@ -158,16 +161,20 @@ const Blog = () => {
                     </div>
                   </div>
                   <Button variant="cta" asChild>
-                    <Link to={`/blog/${featuredPost.slug}`}>
+                    <a
+                      href="https://salescentri.com/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Read Full Article
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
+                    </a>
                   </Button>
                 </div>
                 <div className="bg-gradient-to-br from-telecom-blue/5 to-telecom-blue-dark/5 rounded-xl p-6 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-telecom-blue text-6xl font-bold mb-2">📈</div>
-                    <div className="text-telecom-gray font-semibold">Industry Trends</div>
+                    <div className="text-telecom-blue text-4xl font-bold mb-2">Latest</div>
+                    <div className="text-telecom-gray font-semibold">Industry Insights</div>
                   </div>
                 </div>
               </div>
@@ -201,9 +208,13 @@ const Blog = () => {
                     {post.category}
                   </Badge>
                   <h3 className="text-xl font-bold text-telecom-gray mb-3 group-hover:text-telecom-blue transition-colors">
-                    <Link to={`/blog/${post.slug}`}>
+                    <a
+                      href="https://salescentri.com/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {post.title}
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-telecom-gray-light mb-4 line-clamp-3">
                     {post.excerpt}
@@ -216,10 +227,14 @@ const Blog = () => {
                     </div>
                   </div>
                   <Button variant="outline-cta" size="sm" asChild>
-                    <Link to={`/blog/${post.slug}`}>
+                    <a
+                      href="https://salescentri.com/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Read More
                       <ArrowRight className="ml-2 h-3 w-3" />
-                    </Link>
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -227,8 +242,14 @@ const Blog = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="cta" size="lg">
-              Load More Articles
+            <Button variant="cta" size="lg" asChild>
+              <a
+                href="https://salescentri.com/blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Load More Articles
+              </a>
             </Button>
           </div>
         </div>
@@ -253,8 +274,15 @@ const Blog = () => {
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-telecom-blue"
+                asChild
               >
-                Subscribe
+                <a
+                  href="https://salescentri.com/get-started/free-trial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Subscribe
+                </a>
               </Button>
             </div>
           </div>

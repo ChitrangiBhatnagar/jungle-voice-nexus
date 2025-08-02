@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Phone className="h-6 w-6 text-telecom-blue" />
+              <Phone className="h-6 w-6 text-telecom-green" />
               <span className="text-lg font-bold">MyJungleGarden</span>
             </div>
             <p className="text-gray-300 text-sm">
@@ -22,13 +22,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:info@myjunglegarden.com" className="hover:text-telecom-blue transition-colors">
+                <a href="mailto:info@myjunglegarden.com" className="hover:text-telecom-green transition-colors">
                   info@myjunglegarden.com
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+1234567890" className="hover:text-telecom-blue transition-colors">
+                <a href="tel:+1234567890" className="hover:text-telecom-green transition-colors">
                   +1 (234) 567-8900
                 </a>
               </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Solutions</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link to="/features" className="hover:text-telecom-blue transition-colors">
+                <Link to="/features" className="hover:text-telecom-green transition-colors">
                   iGCT Platform
                 </Link>
               </li>
@@ -49,7 +49,7 @@ const Footer = () => {
                   href="https://salescentri.com/solutions/use-case-navigator/demo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>Live Demo</span>
                   <ExternalLink className="h-3 w-3" />
@@ -60,7 +60,7 @@ const Footer = () => {
                   href="https://salescentri.com/solutions/psa-suite/integrations"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>CRM Integrations</span>
                   <ExternalLink className="h-3 w-3" />
@@ -71,7 +71,7 @@ const Footer = () => {
                   href="https://salescentri.com/platforms/lead-management/lead-generation"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>ROI Calculator</span>
                   <ExternalLink className="h-3 w-3" />
@@ -85,16 +85,21 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Resources</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link to="/blog" className="hover:text-telecom-blue transition-colors">
+                <a
+                  href="https://salescentri.com/blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-telecom-green transition-colors"
+                >
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
                 <a
                   href="https://salescentri.com/resources/case-studies"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>Case Studies</span>
                   <ExternalLink className="h-3 w-3" />
@@ -105,14 +110,14 @@ const Footer = () => {
                   href="https://salescentri.com/resources/whitepapers-ebooks"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>Whitepapers</span>
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-telecom-blue transition-colors">
+                <Link to="/faq" className="hover:text-telecom-green transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -124,7 +129,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Company</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link to="/about" className="hover:text-telecom-blue transition-colors">
+                <Link to="/about" className="hover:text-telecom-green transition-colors">
                   About Us
                 </Link>
               </li>
@@ -133,19 +138,19 @@ const Footer = () => {
                   href="https://salescentri.com/company/about-us/leadership-team"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+                  className="hover:text-telecom-green transition-colors flex items-center space-x-1"
                 >
                   <span>Leadership</span>
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-telecom-blue transition-colors">
+                <Link to="/contact" className="hover:text-telecom-green transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="hover:text-telecom-blue transition-colors">
+                <Link to="/pricing" className="hover:text-telecom-green transition-colors">
                   Pricing
                 </Link>
               </li>
@@ -159,17 +164,27 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-6 text-sm text-gray-400">
-            <Link to="/privacy" className="hover:text-telecom-blue transition-colors">
+            <a
+              href="https://salescentri.com/trust/security-privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-telecom-green transition-colors"
+            >
               Privacy Policy
-            </Link>
-            <Link to="/terms" className="hover:text-telecom-blue transition-colors">
+            </a>
+            <a
+              href="https://salescentri.com/trust/compliance-certifications"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-telecom-green transition-colors"
+            >
               Terms of Service
-            </Link>
+            </a>
             <a
               href="https://salescentri.com?utm_source=myjunglegarden.com&utm_medium=footer&utm_campaign=partner_network"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-telecom-blue transition-colors flex items-center space-x-1"
+              className="hover:text-telecom-green transition-colors flex items-center space-x-1"
             >
               <span>Powered by Sales Intelligence Platform</span>
               <ExternalLink className="h-3 w-3" />

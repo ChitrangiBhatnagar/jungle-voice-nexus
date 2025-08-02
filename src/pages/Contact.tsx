@@ -113,9 +113,15 @@ const Contact = () => {
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Button variant="outline-cta" size="lg">
-                <MessageCircle className="mr-2 h-4 w-4" />
-                Live Chat
+              <Button variant="outline-cta" size="lg" asChild>
+                <a
+                  href="https://salescentri.com/contact/support-request/live-chat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Live Chat
+                </a>
               </Button>
             </div>
           </div>
@@ -315,9 +321,15 @@ const Contact = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <Button variant="outline-cta" size="lg">
-                  Get Directions
-                  <ExternalLink className="ml-2 h-4 w-4" />
+                <Button variant="outline-cta" size="lg" asChild>
+                  <a
+                    href="https://salescentri.com/get-started/contact"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Directions
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </div>

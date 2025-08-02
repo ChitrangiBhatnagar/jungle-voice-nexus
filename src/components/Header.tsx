@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Phone className="h-8 w-8 text-telecom-blue" />
+            <Phone className="h-8 w-8 text-telecom-green" />
             <span className="text-xl font-bold text-telecom-gray">
               MyJungleGarden
             </span>
@@ -36,9 +36,9 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-telecom-blue ${
+                className={`text-sm font-medium transition-colors hover:text-telecom-green ${
                   isActive(item.href)
-                    ? "text-telecom-blue"
+                    ? "text-telecom-green"
                     : "text-telecom-gray-light"
                 }`}
               >
@@ -82,9 +82,9 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-lg font-medium transition-colors hover:text-telecom-blue ${
+                    className={`text-lg font-medium transition-colors hover:text-telecom-green ${
                       isActive(item.href)
-                        ? "text-telecom-blue"
+                        ? "text-telecom-green"
                         : "text-telecom-gray-light"
                     }`}
                     onClick={() => setIsOpen(false)}
